@@ -8,9 +8,46 @@ namespace Module_4
         {
 
             //4.5
+            (string Name, string LastName, string Login, int LoginLength, bool HasAPet, double Age, string[] favcolors) User;//4.5.1
 
+            for(int j = 0; j < 3; j++)//4.5.6
+            {
+                Console.WriteLine("Введите имя:");//4.5.2
+                User.Name = Console.ReadLine();
 
+                Console.WriteLine("Введите фамилию:");
+                User.LastName = Console.ReadLine();
+
+                Console.WriteLine("Введите логин:");
+                User.Login = Console.ReadLine();
+
+                User.LoginLength = User.Login.Length;//4.5.3
+
+                Console.WriteLine("Есть ли у вас животные? Да или Нет");//4.5.4
+                var result = Console.ReadLine();
+
+                if(result == "Да")
+                {
+                    User.HasAPet = true;
+                }
+                else
+                {
+                    User.HasAPet = false;
+                }
+
+                Console.WriteLine("Ведите ваш возраст:");//4.5.5
+                User.Age = Convert.ToDouble(Console.ReadLine());
+
+                User.favcolors = new string[3];
+                Console.WriteLine("Введите три любимых цвета пользователя");
+
+                for(int i = 0; i < User.favcolors.Length; i++)
+                {
+                    User.favcolors[i] = Console.ReadLine();
+                }
+            }
             //4.4.5
+            /*
             (string Name, string Type, double Age, int NameCount) Pet;
 
             Console.WriteLine("Имя питомца:");
@@ -22,7 +59,7 @@ namespace Module_4
             Pet.NameCount = Pet.Name.Length;
             Console.WriteLine(Pet.Name + Pet.Type + Pet.Age + Pet.NameCount);
             Console.ReadKey();
-
+            */
             //4.3.17
             /*
             int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
