@@ -20,13 +20,12 @@ namespace Module_4
 
                 Console.WriteLine("Введите логин:");
                 User.Login = Console.ReadLine();
-
                 User.LoginLength = User.Login.Length;//4.5.3
 
                 Console.WriteLine("Есть ли у вас животные? Да или Нет");//4.5.4
                 var result = Console.ReadLine();
 
-                if(result == "Да")
+                if (result == "Да")
                 {
                     User.HasAPet = true;
                 }
@@ -41,11 +40,12 @@ namespace Module_4
                 User.favcolors = new string[3];
                 Console.WriteLine("Введите три любимых цвета пользователя");
 
-                for(int i = 0; i < User.favcolors.Length; i++)
+                for (int i = 0; i < User.favcolors.Length; i++)
                 {
                     User.favcolors[i] = Console.ReadLine();
                 }
             }
+
             //4.4.5
             /*
             (string Name, string Type, double Age, int NameCount) Pet;
