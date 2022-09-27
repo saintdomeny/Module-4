@@ -8,9 +8,10 @@ namespace Module_4
         {
 
             //4.5
-
+            (string Name, string LastName, string Login, int LoginLength, bool HasAPet, byte Age, string[] favcolors) User;//4.5.1
 
             //4.4.5
+            /*
             (string Name, string Type, double Age, int NameCount) Pet;
 
             Console.WriteLine("Имя питомца:");
@@ -22,7 +23,7 @@ namespace Module_4
             Pet.NameCount = Pet.Name.Length;
             Console.WriteLine(Pet.Name + Pet.Type + Pet.Age + Pet.NameCount);
             Console.ReadKey();
-
+            */
             //4.3.17
             /*
             int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
